@@ -23,7 +23,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - run: mkdir -p build/images
-      - run: cp images/* build/images
+      - run: cp -R images/* build/images
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.2.0
       - run: npm install

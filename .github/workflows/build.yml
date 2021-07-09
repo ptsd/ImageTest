@@ -43,6 +43,6 @@ jobs:
           build_dir: build
           jekyll: false
           # If enabled, nothing will be pushed
-          dry_run: true
+          dry_run: false
           # Enable verbose output
           verbose: true

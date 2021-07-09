@@ -10,7 +10,7 @@ hashElement('./build/images', options)
   .then(hash => {
     console.log(hash.toString());
     try {
-      const data = fs.writeFileSync('./build/resources.json', hash.toString());
+      const data = fs.writeFileSync('./build/resources.json', JSON.stringify(hash));
       //file written successfully
     } catch (err) {
       console.error(err);
